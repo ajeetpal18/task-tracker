@@ -1,0 +1,6 @@
+@import "tailwindcss";
+.navbar {
+  background: #2e3753;
+  height: 10vh;
+  justify-content: space-between;
+}
