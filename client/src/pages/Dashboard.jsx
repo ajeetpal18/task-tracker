@@ -5,8 +5,8 @@ import TaskList from "../components/TaskList";
 import Features from "../components/Features";
 import Stats from "../components/Stats";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
 import { useAuth } from "../context/AuthContext";
+
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
   const navigate = useNavigate();
@@ -70,23 +70,7 @@ const Dashboard = () => {
             Manage all your tasks from one place.
           </p>
         </div>
-        <div className="flex gap-4 m-3 p-3 h-10 w-40 bg-red-600">
-          <Link
-            to="/create-task"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
-          >
-            + New Task
-          </Link>
-          <button
-            onClick={() => {
-              logout();
-              navigate("/");
-            }}
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg"
-          >
-            Logout
-          </button>
-        </div>
+       
         <Link
           to="/create-task"
           className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
