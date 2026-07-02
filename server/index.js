@@ -14,8 +14,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "http://localhost:5179",
-      "https://your-app.vercel.app",
+      "https://task-tracker321-iota.vercel.app/",
     ],
     credentials: true,
   })
